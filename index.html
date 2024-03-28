@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous" />
+    <style>
+        .customize-color{
+            background-color: rgb(4, 4, 4) !important;
+            color:palegreen !important;
+        }
+        .customize2-color{
+            background-color: rgb(213, 142, 227) !important;
+            color:rgb(9, 9, 9) !important;
+        }
+
+        .customize3-color{
+            background-color: rgb(12, 12, 12) !important;
+            color:rgb(254, 242, 6) !important;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<!-- Customization -->
+<label class="fw-bold  mb-3 ms-3">CUSTOMIZATION</label>
+
+    <h1 class="text-dark bg-warning text-center"> This is Bootstrap !</h1>
+    <p class= "text-light bg-primary" >My name is Anupriya and this is my first bootstrap sample test case lets see how it works ok !!!</p>
+    <p class= "text-danger bg-primary customize-color" > Trial for customization Lets try !!!</p>
+    
+<!-- Row, Columns, GRID and Gutter g -->
+<label class="fw-bold  mb-3 ms-3">ROW COLUMNS GRID AND GUTTERS</label>
+
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-4 col-sm-12 bg-danger text-center text-dark customize2-color"> <b> <i>First trial</i></b> </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 bg-success text-center text-light"> <b> <i>Second trial</i></b></div>
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center text-dark customize-color"><b> <i>Third trial</i></b></div>
+            
+        </div>
+    </div>
+    <br>
+
+<!-- Topography -->
+<label class="fw-bold  mb-3 ms-3">TOPOGRAPHY</label>
+
+    <p class="h3 text-primary"> This is of size h1 sample </p>
+    <span class = "text-info fw-bold"> This is span </span> 
+    <div class="display-7 text-danger"> This is div display 7 is smallest</div> <br>
+
+
+<!-- Adding Images-->
+<label class="fw-bold  mb-3 ms-3">ADDING IMAGES AND ADJUSTING ITS POSITION</label>
+
+<div class="ms-3">
+<img src="Ai_fox.jpg"
+class =" float-start" height="200" width="300" alt=" " />
+</div>
+
+<div class="me-3">
+<img src="fox_new.jpg"
+class ="float-end" height="200" width="300" alt=" " />
+</div>
+
+<div class="text-center ">
+    <img src="Fox-hd-wallpaper.jpg" 
+    class ="img-fluid img-thumbnail" height="500" width="600" alt=" " />
+</div>
+<br>
+
+
+<!-- Bootstrap Tables -->
+<label class="fw-bold  mb-3 ms-3">BOOTSTRAP TABLES</label>
+
+<table class="table">
+    <thread>
+        <tr>
+            <th> # </th>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Enroll</th>
+    </thread>
+    <tbody>
+        <tr>
+            <th> 1</th>
+            <td> Cunning </td>
+            <td> 21 </td>
+            <td> 1234 </td>
+        </tr>
+        <tr>
+            <th> 2</th>
+            <td> Trouble </td>
+            <td> 30</td>
+            <td> 7 </td>
+        </tr>
+        <tr>
+            <th> 3</th>
+            <td colspan="2"> Purple </td>
+            <td> 77 </td>
+        </tr>
+        <tr>
+            <th> 4</th>
+            <td> Fox </td>
+            <td> 28 </td>
+            <td> 88 </td>
+        </tr>
+        <tr>    
+            <th> 5</th>
+            <td> Black</td>
+            <td> 30 </td>
+            <td> 99 </td>
+        </tr>
+            
+    </tbody>
+</table> 
+<br>
+
+<!-- Margin and Padding -->
+<label class="fw-bold  mb-3 ms-3">MARGIN AND PADDING</label>
+
+<div class= "bg-dark customize3-color text-center
+mt-3 mb-3 ms-5 me-5
+pt-3 pb-3 ps-3 pe-3
+"> Hello Back ! This is the test for margins and Padding</div>
+
+<br>
+
+<!-- Margin adjust with the screen adjust or breakpoints -->
+<label class="fw-bold  mb-3 ms-3">MARGIN ADJUST WRT BREAKPOINTS</label>
+
+<div class= "bg-success text-light fw-bold text-center
+mb-lg-5 mb-md-3 mb-sm-0 
+ps-3 pe-3
+"> This is the Test for the margin adjust
+ with the screen adjust or breakpoints !! 
+ Lets see how it works exactly</div>
+
+<br>
+
+<!-- Form control -->
+
+<div class="ms-5">
+     <label class="fw-bold  mb-3">FORM CONTROL</label>
+     
+<form action=" ">
+<div>
+    <label class="form label"> Enter the Email  </label>
+        <input type="email" class="form-control" placeholder="trial for email" >
+</div>
+<div>
+    <label class="form label"> Enter the Password </label> <br>
+        <input type="Password"  placeholder="trial for Password" name=" " id=" ">
+      <!-- name=" " allows the server-side script to identify the  input field.
+           id="  " uniquely identifies the input field for styling or JavaScript manipulation.-->
+</div>
+<div>
+    <input type="submit" name="" id="">
+</div>
+</form>
+
+<br>
+
+<!-- Form Select -->
+<label class="fw-bold  mb-3">FORM SELECT</label>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+crossorigin="anonymous">
+</script>
+
+<select class= "form-select form-select-sm text-light bg-dark" >
+    <option selected>Select one of these Courses</option>
+    <option value="1">HTML</option>
+    <option value="2">CSS</option>
+    <option value="3">JS</option>
+    <option value="4">Bootstrap</option>
+    <option value="5">AI</option>
+    <option value="6">Security</option>
+    <option value="7">Networking</option>
+</select>
+<br>
+
+<!-- CHECKBOX  -->
+<label class="fw-bold  mb-3">CHECKBOX</label>
+
+<div class="form-check text-success fw-bold" >
+    <input class= "form-check-input" type="checkbox">
+    <label> I agree to the terms and conditions</label>
+</div>
+<div class="form-check text-danger fw-bold">
+    <input class= "form-check-input" type="checkbox">
+    <label> I DO NOT Agree</label>
+</div>
+
+<br>
+
+<!-- RADIO BUTTON -->
+<label class="fw-bold  mb-3">RADIO BUTTON</label>
+
+<div class="form-check text-primary fw-bold">
+    <input  type="radio" name="input-radio" checked>
+    <label>This is Radio Button</label>
+</div>
+<div class="form-check text-warning fw-bold">
+    <input  type="radio" name="input-radio" >
+    <label>This is NOT Radio Button</label>
+</div>
+
+<br>
+<!-- SWITCH -->
+<label class="fw-bold  mb-3">SWITCH</label>
+
+<div class="form-check form-switch text-dark fw-bold">
+    <input  class= "form-check-input" type="checkbox"  checked />
+    <label>This is a Switch</label>
+</div>
+
+<br>
+<!-- Range Bar -->
+<label class="fw-bold  mb-3">RANGE BAR</label>
+
+<div class="bg-dark text-warning">
+    <label>This is the Simple Range Bar </label>
+    <input type="range">
+</div>
+<br>
+<div class="bg-dark customize2-color fw-bold">
+    <label>This is the Entire size smooth Range Bar </label>
+    <input type="range" class="form-range">
+</div>
+<br>
+<div class="text-primary fw-bold">
+    <label>This is the Entire size with max and min set Range Bar </label>
+    <input type="range" class="form-range" min="0" max="10" step="2">
+</div>
+<br>
+
+<!-- Form Group -->
+<label class="form-label fw-bold"> CREATE A FORM USING FORM GROUP </label>
+<br>
+
+<form action ="">
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text">Username</span>
+        <input type="text" class="form-control" placeholder="Username" name="" id="" />
+    </div>
+    
+    <div class="input-group mb-3">
+        <input type="email" class="form-control" placeholder="Email.com" name="" id="" />
+        <span class="input-group-text"> Email_id</span>
+    </div>
+    
+    <label class="form-label"> Enter Your ID Detials </label>
+    
+    <div class="input-group mb-2">
+        <span class="input-group-text">Enter The URL</span>
+        <input type="url" class="form-control" placeholder="Paste The URL Here" name="" id="" />
+    </div>
+
+    <div class="input-group mt-3">
+        <input type="text" class="form-control" placeholder="Client Name" name="" id="" />
+        <span class="input-group-text">Contact</span>
+        <input type="tel" class="form-control" placeholder="Client Phone Number" name="" id="" />
+    </div>
+
+    <div class="input-group mt-3">
+        <span class="input-group-text">Description</span>
+        <textarea class="form-control" name="" id="" ></textarea>
+    </div>
+    <div class="mt-3">
+        <input type="submit" name="" id="" />
+    </div>
+ 
+</form>
+<br>
+
+<!-- Creating An actual look Alike Form -->
+<label class="fw-bold  mb-3">CREATING A LOOK ALIKE FORM</label>
+
+<div class="container-fluid">
+    <form action="" class="row g-3">
+        <div class="col-lg-6 col-md-6 col-sm-12  mt-3">
+            <span class="form-label">Username</span>
+            <input type="text" class="form-control" placeholder="Username" name="" id="" />   
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12  mt-3">
+            <span class="form-label">Password</span>
+            <input type="password" class="form-control" placeholder="password" name="" id="" />   
+        </div>
+        <div class="col-12 ">
+            <span class="form-label">Email</span>
+            <input type="email" class="form-control" placeholder="email@gmail.com" name="" id="" />   
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 ">
+            <span class="form-label">Address 1</span>
+            <input type="text" class="form-control" placeholder="Address(mandatory)" name="" id="" />   
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 ">
+            <span class="form-label">Address 2</span>
+            <input type="text" class="form-control" placeholder="Address(optional)" name="" id="" />   
+        </div>
+        <div class="col-5 ">
+            <span class="form-label">City</span>
+            <input type="text" class="form-control" placeholder="city" name="" id="" />   
+        </div>
+        <div class="col-4 ">
+            <span class="form-label">Region</span>
+            <input type="text" class="form-control" placeholder="region" name="" id="" />   
+        </div>
+        <div class="col-3 ">
+            <span class="form-label">Postal Code</span>
+            <input type="text" pattern= "(0-9)(5)" class="form-control" placeholder="postal code" name="" id="" />   
+        </div>
+        <div class="col-12 "> 
+            <button type="submit" class="form-control">Submit Here</button>
+        </div>
+           
+    </form>
+<br> 
+
+<!-- Creating a Floating Form -->
+<label class="fw-bold  mb-3">CREATING A FLOATING FORM</label>
+<div class="form-floating md-3" >
+    <input type="text" class="form-control" placeholder="Username" />
+    <label>Username</label>
+</div>
+<div class="form-floating mt-3" >
+    <input type="password" class="form-control" placeholder="Password" />
+    <label>Password</label>
+</div>
+<br>
+
+<!-- Creating a Alert -->
+<label class="fw-bold  mb-3">ALERT</label>
+
+<div class="alert alert-danger">
+    Hi this is a alert message marked in red
+</div>
+<div class="alert alert-secondary">
+    Hi this is a alert message marked in grey
+</div>
+<br>
+
+<!-- Creating BUTTONS -->
+<label class="fw-bold  mb-3">CREATING BUTTONS </label>
+
+<form class="row g-3">
+
+<div class="mt-3 text-start col-4">
+    <button class="btn btn-warning fw-bold">LEFT-CLICK</button>
+</div>
+
+<div class="mt-3 text-center col-4">
+    <button type="submit" class="btn btn-outline-success fw-bold">CENTER-CLICK</button>
+</div>
+
+<div class="mt-3 text-end col-4">
+    <button type="submit" class="btn btn-info fw-bold">RIGHT-CLICK</button>
+</div>
+
+</form>
+<br>
+
+<!-- Creating BADGE: It is like a label helps to identify a particular part-->
+
+<label class="fw-bold  mb-3">CREATING BADGES </label>
+
+<h5>This is a Normal h5 heading <span class="badge bg-info"> But this here is a Badge</span> </h5>
+
+<button class="btn btn-primary fw-bold">This is Button 
+<span class="badge bg-danger">This here is a Badge</span></button>
+
+<br>
+
+<!-- Creating BOOTSTRAP CARDS -->
+<label class="fw-bold  mb-3 mt-5">BOOTSTRAP CARDS</label> 
+<br>
+
+<div class="container-fluid"> 
+    <div class="row">
+        <div class="card col-6 " style="width:300px">
+            <div class="card-header">Header</div>
+            <img src="Ai_fox.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h6>Red Foxes</h6>
+                <p class="text-justify">
+                Red or orange in color, with a white chest, black legs, and bushy white-tipped tail. 
+                </p>
+                <button type="button" class="btn btn-outline-success fw-bold "> CLICK TO KNOW MORE </button>
+                <div class="card-footer mt-3">Footer</div>
+            </div>
+        </div>
+        
+        <div class="col-sm-1"></div>
+
+        <div class="card col-5 " style="width:300px">
+            <div class="card-header">Header</div>
+            <img src="fox_new.jpg" class="card-img-top"alt=""/>
+            <div class="card-body">
+                <h6>Arctic Foxes</h6>
+                <p class="text-justify"> 
+                Arctic fox prefer to hunt for their food, so you'll need to provide a steady raw meat diet.
+                </p>
+               <button type="button" class="btn btn-outline-success fw-bold "> CLICK TO KNOW MORE </button>
+               <div class="card-footer mt-3">Footer</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!-- Creating BOOTSTRAP CAROUSEL -->
+<label class="fw-bold  mb-3 mt-5">BOOTSTRAP CAROUSEL</label> 
+<br>
+
+<div id="Carousel_Example_ID_Name" class="carousel slides" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button 
+     type="button" 
+     data-bs-target="#Carousel_Example_ID_Name"
+     data-bs-slide-to="0"
+     class="active">
+    </button>
+    <button 
+     type="button" 
+     data-bs-target="#Carousel_Example_ID_Name"
+     data-bs-slide-to="1">
+    </button>
+    <button 
+     type="button" 
+     data-bs-target="#Carousel_Example_ID_Name"
+     data-bs-slide-to="2">
+    </button>
+    </div>  
+    <div class="carousel-inner">
+        <div class="carousel-item active mb-3">
+            <img src="Ai_fox.jpg" alt="" width="800" height="1000" class="d-block w-100"/>
+            <div class="carousel-caption d-md-block">
+                <h6>This is the First Slide</h6>
+                <p>This is my favorite red fox image-1</p>
+            </div>
+        </div>
+        <div class="carousel-item mb-3">
+            <img src="Fox-hd-wallpaper.jpg " alt="" width="800" height="1000" class="d-block w-100"/>
+            <div class="carousel-caption d-md-block">
+                <h6>This is the Second Slide</h6>
+                <p>This is my favorite sleeping fox image-2</p>
+            </div>
+        </div>
+        <div class="carousel-item  mb-3">
+            <img src="fox_new.jpg" alt="" width="800" height="1000" class="d-block w-100"/>
+            <div class="carousel-caption d-md-block text-light fw-bold">
+                <h6>This is the Third Slide</h6>
+                <p>This is my favorite cute fox image-3</p>
+            </div>
+        </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#Carousel_Example_ID_Name" 
+    data-bs-slide="prev" >
+    <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#Carousel_Example_ID_Name" 
+    data-bs-slide="next" >
+    <span class="carousel-control-next-icon"></span>
+    </button>  
+</div>
+
+
+</body>
+</html>
